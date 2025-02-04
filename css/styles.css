@@ -1,0 +1,50 @@
+* {
+    font-family: 'Inter', sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 1rem 2rem;
+}
+
+.logo {
+    width: 154.9px;
+    height: 46.1px;
+}
+
+a {
+    text-decoration: none;
+    color: #677788;
+}
+
+/* --------change to an animation-------- */
+a:hover {
+    color: #2476FF;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 1rem;
+    font-size: 14px;
+}
+
+.nav-button {
+    background-color: #2476FF;
+    color: #fff;
+    border: none;
+    padding: 15px 25px;
+    font-size: 12px;
+    width: 102px;
+    height: 45px;
+    border-radius: 30px;
+}
+
+
+
+
