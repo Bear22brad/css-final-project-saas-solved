@@ -1,14 +1,17 @@
 * {
     font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #fff;
+    background-color: #F6F8FA;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    padding: 1rem 2rem;
+    padding: 10px 30px;
 }
 
 .logo {
@@ -47,14 +50,58 @@ a:hover {
 
 .hero-section .hero-section-bg img {
     width: 100%;
-    height: 100%;
+    height: 532px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
 }
 
 .hero-section-content {
     display: flex;
+    width: 100%;
+    height: 406px;
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
+    margin-top: 30px;
+    padding:30px;
+}
+
+.hero-section-content h1 {
+    font-size: 40px;
+    font-weight: 100;
+    line-height: 1.2;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    padding-bottom: 11px;
+}
+
+.hero-section-content p {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.2;
+    font-family: 'Inter', sans-serif;
+    padding-bottom: 30px;
+    color: #677788;
+}
+
+.hero-section-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+}
+
+.hero-section-buttons span {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.2;
+    font-family: 'Inter', sans-serif;
+    color: #677788;
 }
 
 .hero-section-button{
