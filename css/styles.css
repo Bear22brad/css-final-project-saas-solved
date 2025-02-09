@@ -22,6 +22,7 @@ nav {
 a {
     text-decoration: none;
     color: #677788;
+    transition: color 0.3s ease;
 }
 
 /* --------change to an animation-------- */
@@ -37,23 +38,45 @@ a:hover {
     font-size: 14px;
 }
 
-.nav-button{
+/* Create a common button style */
+.nav-button, .hero-section-button, .pricing--card button {
     background-color: #2476FF;
     color: #fff;
-    border: none;
+    border: 2px solid #2476FF;
     padding: 15px 25px;
     font-size: 12px;
-    width: 102px;
-    height: 45px;
     border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* Specific width/height for nav button */
+.nav-button {
+    width: 105px;
+    height: 45px;
+}
+
+/* Specific width/height for hero and pricing buttons */
+.hero-section-button, .pricing--card button {
+    width: 137px;
+    height: 48px;
+}
+
+/* Common hover effect for all buttons */
+.nav-button:hover, 
+.hero-section-button:hover,
+.pricing--card button:hover {
+    background-color: #fff;
+    color: #2476FF;
 }
 
 .hero-section .hero-section-bg img {
     width: 100%;
-    height: 532px;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    height: 480px;
+    object-fit: cover;
     position: absolute;
     top: 0;
     left: 0;
@@ -75,7 +98,6 @@ a:hover {
     font-size: 40px;
     font-weight: 100;
     line-height: 1.2;
-    font-family: 'Inter', sans-serif;
     font-weight: 500;
     padding-bottom: 11px;
 }
@@ -84,7 +106,6 @@ a:hover {
     font-size: 14px;
     font-weight: 500;
     line-height: 1.2;
-    font-family: 'Inter', sans-serif;
     padding-bottom: 30px;
     color: #677788;
 }
@@ -100,14 +121,19 @@ a:hover {
     font-size: 14px;
     font-weight: 500;
     line-height: 1.2;
-    font-family: 'Inter', sans-serif;
     color: #677788;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.hero-section-buttons span:hover {
+    color: #2476FF;
 }
 
 .hero-section-button{
     background-color: #2476FF;
     color: #fff;
-    border: none;
+    border: 2px solid #2476FF;
     padding: 15px 25px;
     font-size: 12px;
     width: 137px;
@@ -116,11 +142,180 @@ a:hover {
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
 }
 
+.hero-section-button:hover {
+    background-color: #fff;
+    color: #2476FF;
+}
 
+.why-font {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px 30px 80px;
+    gap: 40px;
+}
 
+.why-font-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
 
+.why-font-content p {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.2;
+    color: #677788;
+    text-align: center;
+}
 
+.why-font-content h2 {
+    font-size: 26px;
+    font-weight: bold;
+    line-height: 1.2;
+    color: #000;
+}
 
+.why-font-content-bullets {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-top: 40px;
+    margin-bottom: 60px;
+}
+
+.pricing-section .pricing-section-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.pricing-section .pricing-section-title h2 {
+    font-size: 26px;
+    font-weight: bold;
+    line-height: 1.2;
+    color: #000;
+}
+
+.pricing-section .pricing-section-title p {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.2;
+    color: #677788;
+}
+
+.pricing-section .pricing-section-cards {
+    display: grid;
+    grid-template-columns: 370px 1fr;  /* First column fixed width for card, second column flexible */
+    gap: 30px;
+    padding: 60px 30px 0;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.pricing--card {
+    margin-left: 0;  /* Remove the margin since we're using grid gap */
+    margin-top: 0;   /* Remove top margin since we have padding on container */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    height: 452px;
+    width: 370px;
+    border: 1px solid #E0E0E0;
+    box-shadow: 0 0 10px rgba(0, 10, 10, 0.2);
+    padding: 30px;
+    transition: box-shadow 0.3s ease;
+}
+
+.pricing--card:hover {
+    box-shadow: 0 0 20px rgba(0, 10, 10, 0.3);
+}
+
+.price {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.pricing--card h3 {
+    font-size: 50px;
+    font-weight: 500;
+    line-height: 1.2;
+    color: #000;
+    margin-top: 40px;
+}
+
+.pricing--card span {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;
+    color: #677788;
+    margin-top: 40px;
+}
+
+.pricing--card hr {
+    width: 100%;
+    height: 1px;
+    background-color: #E0E0E0;
+    margin: 20px 0;
+}
+
+.pricing--card p {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    color: #677788;
+    margin-bottom: 50px;
+}
+
+.pricing--card p.cc {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1.2;
+    color: #677788;
+}
+
+.pricing--card button {
+    margin-bottom: 10px;
+}
+
+/* Add styles for plan features grid */
+.plan-features {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    align-content: center;
+}
+
+.feature-item {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.feature-item img {
+    width: 45px;
+    height: 45px;
+}
+
+.feature-item h3 {
+    font-size: 18px;
+    font-weight: 500;
+    color: #000;
+}
+
+.feature-item p {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #677788;
+}
 
