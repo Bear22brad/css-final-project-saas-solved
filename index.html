@@ -116,18 +116,22 @@
         <div class="head-shot">
           <img src="./assets/images/man_one.jpg" alt="head-shot">
         </div>
-        <div class="hire-us-content-right">
-          <form action="">
-            <h4>Fill out the form and we'll be in touch as soon as possible</h4>
+      </div>
+
+      <div class="hire-us-content-right">
+        <form action="">
+          <h4>Fill out the form and we'll be in touch as soon as possible</h4>
+          <div class="form-group">
             <input type="text" placeholder="First name">
             <input type="text" placeholder="Last name">
-            <input type="email" placeholder="Email">
+          </div>
+          <input type="email" placeholder="Email">
+          <div class="form-group">
             <select name="budget" id="budget">
               <option value="selected" disabled selected>Budget</option>
-              <option value="United States">United States</option>
-              <option value="Canada">Canada</option>
-              <option value="United Kingdom">United Kingdom</option>
-              <option value="Australia">Australia</option>
+              <option value="Small">Small</option>
+              <option value="Medium">Medium</option>
+              <option value="Large">Large</option>
             </select>
             <select name="country" id="country">
               <option value="selected" disabled selected>Country</option>
@@ -136,16 +140,15 @@
               <option value="United Kingdom">United Kingdom</option>
               <option value="Australia">Australia</option>
             </select>
-            <textarea name="message" id="message"
-              placeholder="Tell us more about your project, needs, and timeline, please..."></textarea>
+          </div>
+          <textarea name="message" id="message"
+            placeholder="Tell us more about your project, needs, and timeline..."></textarea>
+          <div class="checkbox-group">
             <input type="checkbox" name="checkbox" id="checkbox">
-            <label for="checkbox">Yes, I'd like to receive occasional marketing emails from Front. I have the right to
-              opt out at any time.</label>
-            <a href="" class="privacy-policy-viewed">View privacy policy</a>
-            <a href="" class="privacy-policy">View privacy policy</a>
-            <button class="form-button">Get Started</button>
-          </form>
-        </div>
+            <label for="checkbox">Yes, I'd like to receive occasional marketing emails from Front.</label>
+          </div>
+          <button class="form-button">Submit Form</button>
+        </form>
       </div>
     </section>
   </main>

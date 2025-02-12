@@ -5,6 +5,11 @@
   box-sizing: border-box;
 }
 
+html, body {
+  overflow-x: hidden;
+  width: 100%;
+}
+
 nav {
   display: flex;
   justify-content: space-between;
@@ -91,7 +96,7 @@ a:hover {
   align-items: flex-start;
   justify-content: center;
   margin-top: 30px;
-  margin-left: 10%;
+  margin-left: 30px;
   padding: 30px;
 }
 
@@ -157,6 +162,7 @@ a:hover {
   flex-direction: column;
   align-items: center;
   padding: 0px 30px 80px;
+  padding-top: 80px;
   gap: 40px;
 }
 
@@ -344,3 +350,103 @@ a:hover {
   align-items: center;
   justify-content: center;
 }
+
+/* ---- hire us test---- */
+
+/*--- finish styling and layout--- */
+
+.hire-us-section {
+  display: flex;
+  justify-content: center; /* Center content horizontally */
+  align-items: center;
+  background-color: #12203F;
+  color: white;
+  padding: 80px 10%;
+  gap: 50px;
+}
+
+/* Left Side (Testimonial & Text) */
+.hire-us-content-left {
+  flex: 1;
+  max-width: 40%;
+}
+
+.hire-us-content-left h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.hire-us-content-left p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+.hire-us-content-left em {
+  font-style: italic;
+  display: block;
+  margin-bottom: 15px;
+  font-size: 1.1rem;
+}
+
+.hire-us-content-left .head-shot img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+/* Right Side (Form) */
+.hire-us-content-right {
+  flex: 1;
+  max-width: 75%;
+  background: white;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Form Adjustments */
+.hire-us-content-right form {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+}
+
+.form-group {
+  display: flex;
+  gap: 15px;
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+}
+
+.hire-us-content-right input,
+.hire-us-content-right select,
+.hire-us-content-right textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #dcdcdc;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  font-size: 1rem;
+}
+
+.hire-us-content-right textarea {
+  height: 100px;
+  resize: none;
+}
+
+.checkbox-group {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  color: #677788;
+}
+
+.checkbox-group input[type="checkbox"] {
+  margin-top: 5px;
+}
+
