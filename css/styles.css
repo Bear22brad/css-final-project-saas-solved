@@ -39,7 +39,8 @@ a:hover {
 
 .nav-button,
 .hero-section-button,
-.pricing--card button {
+.pricing--card button,
+.form-button {
   background-color: #2476ff;
   color: #fff;
   border: 2px solid #2476ff;
@@ -66,7 +67,8 @@ a:hover {
 
 .nav-button:hover,
 .hero-section-button:hover,
-.pricing--card button:hover {
+.pricing--card button:hover,
+.form-button:hover {
   background-color: #fff;
   color: #2476ff;
 }
@@ -89,6 +91,7 @@ a:hover {
   align-items: flex-start;
   justify-content: center;
   margin-top: 30px;
+  margin-left: 10%;
   padding: 30px;
 }
 
@@ -186,6 +189,9 @@ a:hover {
   gap: 10px;
   margin-top: 40px;
   margin-bottom: 60px;
+}
+.pricing-section {
+  padding-bottom: 80px;
 }
 
 .pricing-section .pricing-section-title {
@@ -292,6 +298,7 @@ a:hover {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 30px;
+  margin-left: 5%;
   align-content: center;
   justify-content: center;
 }
