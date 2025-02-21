@@ -6,6 +6,7 @@
   <script src="https://kit.fontawesome.com/22441e7689.js" crossorigin="anonymous"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="./css/styles.css" />
+  <link rel="stylesheet" href="./css/media.css" />
   <title>Saas company</title>
 </head>
 
@@ -16,6 +17,7 @@
       <div class="logo">
         <img src="./assets/logos/logo-front.svg" alt="logo" />
       </div>
+      <div class="menu-icon" onclick="toggleMenu()">☰</div>
       <div class="nav-links">
         <a href="#">Home</a>
         <a href="#">Features</a>
@@ -224,6 +226,11 @@
       </div>
     </footer>
   </main>
+  <script>
+    function toggleMenu() {
+      document.querySelector('.nav-links').classList.toggle('active');
+    }
+  </script>
 </body>
 
 </html>

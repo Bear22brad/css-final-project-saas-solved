@@ -411,7 +411,6 @@ a:hover {
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
 }
 
-/* Form Adjustments */
 .hire-us-content-right form {
   display: flex;
   flex-direction: column;
@@ -592,3 +591,9 @@ a:hover {
   margin-left: 5px;
   font-weight: bold;
 }
+ .menu-icon {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+  user-select: none;
+ }
