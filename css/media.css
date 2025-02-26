@@ -54,7 +54,11 @@
     /* Adjust heading size */
     .hero-section-content h1 {
         font-size: 34px;
-        max-width: 90%; /* Keep text from being too wide */
+        max-width: 90%;
+    }
+
+    .hero-section-content h1 br {
+        display: none;
     }
 
     .why-font-content{
@@ -62,6 +66,14 @@
         max-width: 100%;
         padding: 0 5%;
         box-sizing: border-box;
+    }
+
+    .desktop{
+        display: block;
+    }
+
+    .mobile{
+        display: none;
     }
 
     .pricing--card{
@@ -101,12 +113,22 @@
     .footer-container {
         flex-direction: row;
         align-items: center;
-        gap: 35px;
         text-align: center;
     }
 
     .footer-logo {
         gap: 10px;
+    }
+
+    .footer-columns {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        width: 50%;
+    }
+
+    .footer-column {
+        margin-bottom: 20px;
     }
 }
 
@@ -154,15 +176,34 @@
     .nav-links.active {
         display: flex; /* Show when menu is toggled */
     }
-    .hero-section-content {
-        margin-left: auto;
-        margin-right: auto;
-        padding: 20px;
+
+    .hero-section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh; /* Full viewport height */
         text-align: center;
-        width: 90%;
+        margin-top: -150px
     }
+
+    .hero-section-content {
+        margin: 0 auto;
+        padding: 20px;
+        max-width: 80%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center; /* Center vertically */
+        align-items: center; /* Center horizontally */
+        min-height: 80vh; /* Ensure it takes up enough space */
+    }
+
     .hero-section-content h1 {
         font-size: 30px;
+    }
+
+    .hero-section-content h1 br {
+        display: none;
     }
 
     .why-font-content {
@@ -178,6 +219,14 @@
         display: block;
         margin: 0 auto;
         height: auto;
+    }
+    
+    img.desktop{
+        display: none;
+    }
+
+    .mobile{
+        display: block;
     }
 
     .pricing--card{
@@ -204,7 +253,27 @@
         flex-direction: column;
         padding: 40px 5%;
     }
+
+    .footer-logo img{
+        margin-bottom: 20px;
+    }
+
     .footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-columns{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-top: 50px;
+    }
+
+    .footer-column ul{
+        display: flex;
         flex-direction: column;
         align-items: center;
         text-align: center;

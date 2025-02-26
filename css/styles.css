@@ -108,6 +108,10 @@ a:hover {
   padding-bottom: 11px;
 }
 
+.hero-section-content h1 br {
+  display: block;
+}
+
 .hero-section-content p {
   font-size: 14px;
   font-weight: 500;
@@ -186,6 +190,12 @@ a:hover {
   font-weight: bold;
   line-height: 1.2;
   color: #000;
+}
+.desktop{
+  display: block;
+}
+.mobile{
+  display: none;
 }
 
 .why-font-content-bullets {
@@ -591,9 +601,9 @@ a:hover {
   margin-left: 5px;
   font-weight: bold;
 }
- .menu-icon {
+.menu-icon {
   display: none;
   font-size: 24px;
   cursor: pointer;
   user-select: none;
- }
+}
