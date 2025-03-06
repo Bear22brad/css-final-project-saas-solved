@@ -69,11 +69,55 @@
     display: none;
 }
 
+    .hero-section-images .google {
+    position: absolute;
+    top: 10px;
+    left: -350px;
+}
+
+    .hero-section-images .atlassian {
+    position: absolute;
+    top: 20px;
+    left: -30px;
+}
+
+    .hero-section-images .asana {
+    position: absolute;
+    top: 20px;
+    left: 300px;
+}
+
+    .hero-section-images .paypal {
+    position: absolute;
+    top: 150px;
+    left: -320px;
+}
+
+    .hero-section-images .weave {
+    position: absolute;
+    top: 155px;
+    left: 170px;
+}
+
+    .hero-section-images .google-ads {
+    position: absolute;
+    top: 250px;
+    left: -150px;
+}
+
+    .hero-section-images .calendar {
+    position: absolute;
+    top: 250px;
+    left: 250px;
+}
+
+
     .why-font-content {
     width: 100vw;
     max-width: 100%;
     padding: 0 5%;
     box-sizing: border-box;
+
 }
 
     .desktop {
@@ -186,11 +230,13 @@
 
   .hero-section {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh; /* Full viewport height */
     text-align: center;
     margin-top: -150px;
+    height: 900px;
   }
 
   .hero-section-content {
@@ -202,15 +248,56 @@
     flex-direction: column;
     justify-content: center; /* Center vertically */
     align-items: center; /* Center horizontally */
-    min-height: 80vh; /* Ensure it takes up enough space */
+    /* min-height: 80vh; Ensure it takes up enough space */
     order: 1;
   }
 
   .hero-section-images {
-    order: 2; /* Ensure images come after content */
-    margin-top: 20px; /* Add some space above the images */
+    order: 2; /* Ensure images come after content */ 
     height: auto;
   }
+
+    .hero-section-images .google {
+    position: absolute;
+    top: 10px;
+    left: -300px;
+}
+
+    .hero-section-images .atlassian {
+    position: absolute;
+    top: 20px;
+    left: -30px;
+}
+
+    .hero-section-images .asana {
+    position: absolute;
+    top: 20px;
+    left: 200px;
+}
+
+    .hero-section-images .paypal {
+    position: absolute;
+    top: 150px;
+    left: -300px;
+}
+
+    .hero-section-images .weave {
+    position: absolute;
+    top: 155px;
+    left: 100px;
+}
+
+    .hero-section-images .google-ads {
+    position: absolute;
+    top: 250px;
+    left: -150px;
+}
+
+    .hero-section-images .calendar {
+    position: absolute;
+    top: 250px;
+    left: 200px;
+}
 
   .hero-section-content h1 {
     font-size: 30px;
