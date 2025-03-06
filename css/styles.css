@@ -183,11 +183,8 @@ a:hover {
 
 .hero-section-images img {
   position: absolute;
-  width: 100px;
-  height: 100px;
   border-radius: 50%;
   background-color: #fff;
-  padding: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
@@ -200,27 +197,51 @@ a:hover {
 }
 
 .hero-section-images .atlassian {
+  position: absolute;
   top: 80px;
   left: 30%;
   height: 80px;
   width: 80px;
-  padding: 10px;
+  border-radius: 50%;
+  background-image: url('/assets/logos/atlassian.png');
+  background-size: 60%;
+  background-position: center;
+  background-repeat: no-repeat;
+  object-fit: contain;
+  background-color: #ffffff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 .hero-section-images .asana {
+  position: absolute;
   top: -30px;
   left: 75%;
   height: 80px;
   width: 80px;
-  padding: 10px;
+  border-radius: 50%;
+  background-image: url('/assets/logos/asana.png');
+  background-size: 70%;
+  background-position: center;
+  background-repeat: no-repeat;
+  object-fit: contain;
+  background-color: #ffffff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 .hero-section-images .paypal {
+  position: absolute;
   top: 160px;
   left: -10%;
   height: 80px;
   width: 80px;
-  padding: 10px;
+  border-radius: 50%;
+  background-image: url('/assets/logos/paypal.jpg');
+  background-size: 70%;
+  background-position: center;
+  background-repeat: no-repeat;
+  object-fit: contain;
+  background-color: #ffffff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 .hero-section-images .weave {
@@ -228,7 +249,7 @@ a:hover {
   left: 60%;
   height: 80px;
   width: 80px;
-  padding: 10px;
+  padding: 15px;
 }
 
 .hero-section-images .google-ads {
@@ -240,11 +261,19 @@ a:hover {
 }
 
 .hero-section-images .calendar {
+  position: absolute;
   top: 250px;
   left: 70%;
   height: 80px;
   width: 80px;
-  padding: 10px;
+  border-radius: 50%;
+  background-image: url('/assets/logos/calendar.png');
+  background-size: 60%;
+  background-position: center;
+  background-repeat: no-repeat;
+  object-fit: contain;
+  background-color: #ffffff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 .why-font {
