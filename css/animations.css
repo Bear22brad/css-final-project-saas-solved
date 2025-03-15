@@ -1,0 +1,64 @@
+@media (min-width: 1024px){
+
+@keyframes slideIn-left {
+    from {
+        transform: translateX(-500px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn-right {
+    from {
+        transform: translateX(500px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn-bottom {
+    from {
+        transform: translateY(500px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn-top {
+    from {
+        transform: translateY(-500px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.hero-section-images .google, .paypal{
+    animation: slideIn-left 2.5s ease-out;
+}
+
+.hero-section-images .calendar, .weave{
+    animation: slideIn-right 2.5s ease-out;
+}
+
+.hero-section-images .google-ads{
+    animation: slideIn-bottom 2.5s ease-out;
+}
+
+.hero-section-images .atlassian, .asana{
+    animation: slideIn-top 2.5s ease-out;
+}
+
+
+}

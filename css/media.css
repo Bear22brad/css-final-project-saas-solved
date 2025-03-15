@@ -1,5 +1,14 @@
 /* Media query for tablets (768px to 1024px) */
 @media (min-width: 768px) and (max-width: 1024px) {
+
+  .nav-button:hover,
+.hero-section-button:hover,
+.pricing--card button:hover,
+.form-button:hover {
+  background-color: #2476ff;
+  color: #fff;
+}
+
   /* Center the menu icon */
     .menu-icon {
     display: block;
@@ -55,8 +64,9 @@
 
     .hero-section-images {
     order: 2; /* Ensure images come after content */
-    margin-top: 20px; /* Add some space above the images */
+    margin-top: -200px; /* Add some space above the images */
     height: auto;
+    max-width: 90%;
     }
 
   /* Adjust heading size */
@@ -84,7 +94,7 @@
     .hero-section-images .asana {
     position: absolute;
     top: 20px;
-    left: 300px;
+    left: 250px;
 }
 
     .hero-section-images .paypal {
@@ -117,7 +127,10 @@
     max-width: 100%;
     padding: 0 5%;
     box-sizing: border-box;
+}
 
+.why-font-content-bullets .desktop {
+  width: 120%;
 }
 
     .desktop {
@@ -235,7 +248,7 @@
     align-items: center;
     height: 100vh; /* Full viewport height */
     text-align: center;
-    margin-top: -150px;
+    margin-top: -75px;
     height: 900px;
   }
 
@@ -260,31 +273,31 @@
     .hero-section-images .google {
     position: absolute;
     top: 10px;
-    left: -300px;
+    left: -180px;
 }
 
     .hero-section-images .atlassian {
     position: absolute;
     top: 20px;
-    left: -30px;
+    left: -40px;
 }
 
     .hero-section-images .asana {
     position: absolute;
     top: 20px;
-    left: 200px;
+    left: 100px;
 }
 
     .hero-section-images .paypal {
     position: absolute;
     top: 150px;
-    left: -300px;
+    left: -180px;
 }
 
     .hero-section-images .weave {
     position: absolute;
     top: 155px;
-    left: 100px;
+    left: 50px;
 }
 
     .hero-section-images .google-ads {
@@ -296,7 +309,7 @@
     .hero-section-images .calendar {
     position: absolute;
     top: 250px;
-    left: 200px;
+    left: 1a00px;
 }
 
   .hero-section-content h1 {
@@ -312,6 +325,10 @@
     max-width: 100%; /* Prevents overflow */
     padding: 0 5%; /* Adds some spacing */
     box-sizing: border-box; /* Ensures padding doesn’t add extra width */
+  }
+
+  .why-font-content h2 {
+    margin-bottom: 20px;
   }
 
   .why-font-content img {
