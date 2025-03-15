@@ -200,6 +200,15 @@
 
 /* Media query for phones (≤ 767px) */
 @media (max-width: 767px) {
+
+  .nav-button:hover,
+.hero-section-button:hover,
+.pricing--card button:hover,
+.form-button:hover {
+  background-color: #2476ff;
+  color: #fff;
+}
+
   .menu-icon {
     display: block; /* Ensure trigram is visible */
     position: absolute;
