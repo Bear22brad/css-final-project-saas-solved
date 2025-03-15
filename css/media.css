@@ -15,7 +15,7 @@
     position: absolute;
     top: 15px;
     right: 20px;
-    transform: translateX(50%);
+    z-index: 1000; /* Ensure it's above other elements */
 }
 
   /* Centered dropdown menu */
@@ -32,6 +32,7 @@
     padding: 15px;
     border-radius: 5px;
     text-align: center; /* Center text */
+    z-index: 999; /* Ensure it's visible above other elements */
 }
 
     .nav-links.active {
@@ -206,6 +207,7 @@
     right: 20px;
     font-size: 28px;
     cursor: pointer;
+    z-index: 1000; /* Ensure it's above other elements */
   }
 
   .nav-links {
@@ -220,6 +222,7 @@
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Same shadow effect */
     padding: 15px;
     border-radius: 5px;
+    z-index: 999; /* Ensure it's visible above other elements */
   }
   .nav-links.active {
     display: flex; /* Show when menu is toggled */
@@ -230,15 +233,6 @@
     align-items: center;
     padding: 15px 10px;
     text-align: center;
-  }
-  .nav-links {
-    font-size: 14px;
-    flex-direction: column;
-    gap: 8px;
-    display: none; /* Initially hidden for mobile menu */
-  }
-  .nav-links.active {
-    display: flex; /* Show when menu is toggled */
   }
 
   .hero-section {
@@ -324,7 +318,7 @@
     width: 100vw; /* Ensures full width */
     max-width: 100%; /* Prevents overflow */
     padding: 0 5%; /* Adds some spacing */
-    box-sizing: border-box; /* Ensures padding doesn’t add extra width */
+    box-sizing: border-box; /* Ensures padding doesn't add extra width */
   }
 
   .why-font-content h2 {
